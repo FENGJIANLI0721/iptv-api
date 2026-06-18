@@ -1,0 +1,24 @@
+🕘️更新时间,#genre#
+2026-06-18 10:14:48,https://xykt-fix.github.io/play/a02e/index.m3u8
+
+📺央视频道,#genre#
+CCTV-15,https://xykt-fix.github.io/play/a02e/index.m3u8
+
+📡卫视频道,#genre#
+
+☘️广东频道,#genre#
+
+🌍港澳台,#genre#
+
+🇯🇵日本,#genre#
+
+🇰🇷韩国,#genre#
+
+🇺🇸美国,#genre#
+
+🇬🇧英国,#genre#
+
+🎬电影/娱乐,#genre#
+
+📰国际新闻,#genre#
+Euronews,https://jmp2.uk/plu-61de8e502c8e9400077e5de7.m3u8
