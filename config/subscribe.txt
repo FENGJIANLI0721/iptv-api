@@ -1,12 +1,52 @@
-# 这是订阅源列表，每行一个订阅地址
-# 支持设置UA：https://xxx.com/subscribe.m3u UA="xxx"
-# This is a list of subscription sources, with one subscription address per line
+# 订阅源列表，每行一个
 # Supports setting UA: https://xxx.com/subscribe.m3u UA="xxx"
 
+# ========== iptv-org 全球频道（主列表） ==========
+https://iptv-org.github.io/iptv/index.m3u
 
+# ========== 按语言 ==========
+# 中文频道（含大陆/港台/海外华人台）
+https://iptv-org.github.io/iptv/languages/zho.m3u
+# 英文频道
+https://iptv-org.github.io/iptv/languages/eng.m3u
+# 日语频道
+https://iptv-org.github.io/iptv/languages/jpn.m3u
+# 韩语频道
+https://iptv-org.github.io/iptv/languages/kor.m3u
 
+# ========== 按分类 ==========
+# 娱乐
+https://iptv-org.github.io/iptv/categories/entertainment.m3u
+# 电影
+https://iptv-org.github.io/iptv/categories/movies.m3u
+# 新闻
+https://iptv-org.github.io/iptv/categories/news.m3u
+# 体育
+https://iptv-org.github.io/iptv/categories/sports.m3u
+# 音乐
+https://iptv-org.github.io/iptv/categories/music.m3u
+# 纪录片
+https://iptv-org.github.io/iptv/categories/documentary.m3u
+# 综合
+https://iptv-org.github.io/iptv/categories/general.m3u
 
+# ========== 按国家/地区 ==========
+# 香港
+https://iptv-org.github.io/iptv/countries/hk.m3u
+# 台湾
+https://iptv-org.github.io/iptv/countries/tw.m3u
+# 日本
+https://iptv-org.github.io/iptv/countries/jp.m3u
+# 韩国
+https://iptv-org.github.io/iptv/countries/kr.m3u
+# 美国
+https://iptv-org.github.io/iptv/countries/us.m3u
+# 英国
+https://iptv-org.github.io/iptv/countries/gb.m3u
+# 加拿大
+https://iptv-org.github.io/iptv/countries/ca.m3u
+# 澳大利亚
+https://iptv-org.github.io/iptv/countries/au.m3u
 
 [WHITELIST]
-# 以下是订阅源的白名单，白名单内的订阅源获取的接口将不会参与测速，始终保留至结果最前。
-# This is the whitelist for subscription sources. Subscription sources in the whitelist will not participate in speed testing and will always be retained at the front of the results.
+# 白名单：以下源不参与测速，始终保留
