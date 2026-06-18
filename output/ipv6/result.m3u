@@ -1,7 +1,11 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/FENGJIANLI0721/iptv-api/refs/heads/master/output/epg/epg.gz"
-#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://live.fanmingming.cn/tv/CCTV-1.png" group-title="🕘️更新时间",2026-06-18 10:14:48
-https://xykt-fix.github.io/play/a02e/index.m3u8
+#EXTM3U x-tvg-url="https://ghp.ci/https://raw.githubusercontent.com/FENGJIANLI0721/iptv-api/refs/heads/master/output/epg/epg.gz"
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://live.fanmingming.cn/tv/CCTV-1.png" group-title="🕘️更新时间",2026-06-18 10:20:11
+https://xykt-fix.github.io/Y77.m3u8
+#EXTINF:-1 tvg-id="CCTV-9" tvg-name="CCTV-9" tvg-logo="https://live.fanmingming.cn/tv/CCTV-9.png" group-title="📺央视频道",CCTV-9
+https://xykt-fix.github.io/Y77.m3u8
 #EXTINF:-1 tvg-id="CCTV-15" tvg-name="CCTV-15" tvg-logo="https://live.fanmingming.cn/tv/CCTV-15.png" group-title="📺央视频道",CCTV-15
 https://xykt-fix.github.io/play/a02e/index.m3u8
+#EXTINF:-1 tvg-id="Sky News" tvg-name="Sky News" tvg-logo="https://live.fanmingming.cn/tv/Sky News.png" group-title="🇬🇧英国",Sky News
+https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
 #EXTINF:-1 tvg-id="Euronews" tvg-name="Euronews" tvg-logo="https://live.fanmingming.cn/tv/Euronews.png" group-title="📰国际新闻",Euronews
 https://jmp2.uk/plu-61de8e502c8e9400077e5de7.m3u8
