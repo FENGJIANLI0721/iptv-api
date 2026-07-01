@@ -59,7 +59,44 @@ CETV-4
 广州竞赛
 江门综合
 佛山综合
-深圳卫视
+
+⚽体育频道,#genre#
+CCTV-5
+CCTV-5+
+广东体育
+上海体育
+北京体育
+广州竞赛
+ESPN
+ESPN 2
+ESPN 3
+ESPN Philippines
+NBA TV
+TNT
+Tennis Channel
+Eurosport 1
+Eurosport 2
+Sky Sports
+Sky Sports Main Event
+Sky Sports Premier League
+Sky Sports Football
+Sky Sports Cricket
+Sky Sports F1
+Sky Sports News
+Fox Sports
+Fox Sports 1
+Fox Sports 2
+beIN Sports
+beIN Sports 1
+beIN Sports 2
+beIN Sports 3
+DAZN 1
+DAZN 2
+Sport TV
+Sport TV 1
+Sport TV 2
+Sport TV 3
+Match TV
 
 🌍港澳台,#genre#
 凤凰中文
@@ -77,8 +114,6 @@ TVBS News
 三立新闻
 民视
 华视
-公视
-寰宇新闻
 
 🇯🇵日本,#genre#
 NHK World
@@ -97,7 +132,6 @@ MBC
 SBS
 Arirang
 YTN
-CJ Entertainment
 
 🇺🇸美国,#genre#
 CNN
@@ -110,16 +144,13 @@ MSNBC
 BBC World News
 Bloomberg
 CNBC
-HBO
 National Geographic
 Discovery Channel
-Disney Channel
-Cartoon Network
 ESPN
-History Channel
-TLC
-Travel Channel
-Weather Channel
+ESPN 2
+ESPN 3
+NBA TV
+TNT
 PBS
 
 🇬🇧英国,#genre#
@@ -144,7 +175,6 @@ Nat Geo Wild
 Animal Planet
 Disney Channel
 Cartoon Network
-MTV
 
 📰国际新闻,#genre#
 BBC World News
