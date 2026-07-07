@@ -1,42 +1,31 @@
-name: 'Update schedule'
+name: 'Update IPTV list'
 
 on:
   schedule:
-    - cron: '0 19 * * *'
+    - cron: '0 20 * * *'
   workflow_dispatch:
 
 jobs:
-  push:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Set branch name
-        id: vars
-        run: echo "BRANCH_NAME=${{ github.repository_owner == 'Guovin' && 'gd' || 'master' }}" >> $GITHUB_ENV
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ env.BRANCH_NAME }}
-      - name: Run with setup-python 3.13
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
-          update-environment: true
-          cache: 'pipenv'
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - name: Install pipenv
-        run: pip3 install --user pipenv
-      - name: Install dependecies
-        run: pipenv --python 3.13 && pipenv install --deploy
-      - name: Update
-        run: pipenv run dev
-      - name: Commit and push if changed
+          python-version: '3.11'
+      - name: Merge IPTV sources
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
+          pip install requests --quiet
+          python .github/scripts/merge_sources.py
+      - name: Commit result
+        run: |
+          git config --local user.email 'bot@users.noreply.github.com'
+          git config --local user.name 'bot'
+          git add output/result.m3u
           if ! git diff --staged --quiet; then
-            git commit -m "Github Action Auto Updated"
+            git commit -m 'Auto update IPTV list'
             git push
           fi
