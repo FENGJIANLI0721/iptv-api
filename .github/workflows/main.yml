@@ -1,8 +1,8 @@
-name: 'Update IPTV list'
+name: "Update IPTV list"
 
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: "0 20 * * *"
   workflow_dispatch:
 
 jobs:
@@ -12,20 +12,16 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - name: Merge IPTV sources
-        run: |
-          pip install requests --quiet
-          python .github/scripts/merge_sources.py
-      - name: Commit result
-        run: |
-          git config --local user.email 'bot@users.noreply.github.com'
-          git config --local user.name 'bot'
+          python-version: "3.11"
+      - run: pip install requests --quiet
+      - run: python .github/scripts/merge_sources.py
+      - run: |
+          git config --local user.email "bot@users.noreply.github.com"
+          git config --local user.name "bot"
           git add output/result.m3u
           if ! git diff --staged --quiet; then
-            git commit -m 'Auto update IPTV list'
+            git commit -m "Auto update"
             git push
           fi
